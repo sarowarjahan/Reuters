@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="Home.TestNbaHomePage">
+        <methods>
+          <include name="testStatsPage"/>
+          <include name="testTeamPage"/>
+          <include name="testPlayersPage"/>
+          <include name="testTopStoriesPage"/>
+          <include name="testGamePage"/>
+          <include name="setUp"/>
+          <include name="testStandingPage"/>
+        </methods>
+      </class> <!-- Home.TestNbaHomePage -->
+      <class name="Login.TestLogIn">
+        <methods>
+          <include name="testValidEmailAndInValidPassword"/>
+          <include name="testValidEmailAndValidPassword"/>
+          <include name="testInValidEmailAndValidPassword"/>
+          <include name="testInValidEmailAndPassword"/>
+        </methods>
+      </class> <!-- Login.TestLogIn -->
+      <class name="NBAStatsPage.TestNBAStats">
+        <methods>
+          <include name="testNBAPointsPage"/>
+          <include name="testNbaAssistPage"/>
+          <include name="testNbaReboundsPage"/>
+          <include name="testNbaBlocksPage"/>
+        </methods>
+      </class> <!-- NBAStatsPage.TestNBAStats -->
+      <class name="Register.TestRegister">
+        <methods>
+          <include name="testNBARegistrarWithValidCredentials"/>
+          <include name="testRegistrarWithInValidCredentials"/>
+        </methods>
+      </class> <!-- Register.TestRegister -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

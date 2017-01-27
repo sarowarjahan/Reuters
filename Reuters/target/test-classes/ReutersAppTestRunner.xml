@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Reuters News" parallel="tests">
+    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="userName" value="sarowar"/>
+    <parameter name="accessKey" value="231474b0-8281-4dd4-9b44-e819bd124c40"/>
+    <parameter name="os" value="Mac"/>
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="browserVersion" value="55.0"/>
+    <parameter name="url" value="http://www.reuters.com/"/>
+    <test name = "Reuters Pages">
+        <classes>
+            <!--<class name="TestMenus.TestTopMenus"/>-->
+            <!--<class name="TestMarketTab.TestTabs"/>-->
+            <!--<class name="SearchItems.TestSearchByDataProvider"/>-->
+            <!--<class name="SearchItems.TestSearchByExcel"/>-->
+            <!--<class name="TestSocialLinks.TestSocial"/>-->
+            <!--<class name="TestTheWire.TestTheWire"/>-->
+            <!--<class name="TestTopNews.TestTopNews"/>-->
+            <class name="TestSignInUser.TestSignIn"/>
+        </classes>
+    </test>
+
+</suite>

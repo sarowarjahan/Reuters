@@ -1,0 +1,9 @@
+PageFactorySearch/NewsSearch.class
+PageFactoryHome/TopMenus.class
+PageFactoryHome/TopNews.class
+methods/CommonMethods.class
+PageFactoryHome/TheWireLinks.class
+PageFactoryHome/MarketTabInfo.class
+dataToSearch/ItemToBeSearched.class
+PageFactoryHome/SocialLinks.class
+PageFactorySignUp/Signup.class
