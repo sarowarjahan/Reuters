@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Reuters News]" parallel="tests">
+  <parameter name="useCloudEnv" value="false"/>
+  <parameter name="os" value="Mac"/>
+  <parameter name="accessKey" value="28625ea2-4432-4ac5-92ef-2c3153e4a84a"/>
+  <parameter name="browserVersion" value="55.0"/>
+  <parameter name="browserName" value="chrome"/>
+  <parameter name="userName" value="sarowarjahan"/>
+  <parameter name="url" value="http://www.reuters.com/"/>
+  <test name="Reuters Pages(failed)" parallel="tests">
+    <classes>
+      <class name="SearchItems.TestSearchByDB">
+        <methods>
+          <include name="tearDown"/>
+          <include name="searchUsingDB"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- SearchItems.TestSearchByDB -->
+    </classes>
+  </test> <!-- Reuters Pages(failed) -->
+</suite> <!-- Failed suite [Reuters News] -->

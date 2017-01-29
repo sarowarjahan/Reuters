@@ -23,6 +23,12 @@ public class ConnectDB {
     Statement statement = null;
     PreparedStatement ps = null;
     private ResultSet resultSet = null;
+
+
+    Connection conn = null;
+    Statement stmt = null;
+    ResultSet rs=null;
+
     List<String> list = new ArrayList<String>();
 
     public static Properties loadProperties() throws IOException{
@@ -46,7 +52,17 @@ public class ConnectDB {
 
     }
 
+    public void connectToDBReuters() throws ClassNotFoundException, SQLException {
+        String myDriver = "com.mysql.jdbc.Driver";
+        Class.forName(myDriver);
+        String URL = "jdbc:mysql://localhost/reuters?useSSL=false";
+        String userN = "root";
+        String passW = "";
+        conn = DriverManager.getConnection(URL, userN, passW);
+        //System.out.println("Connected to Database:reuters");
 
+
+    }
 
     public static MongoDatabase connectMongoDB() {
 
@@ -243,4 +259,42 @@ public class ConnectDB {
         //connection = ConnectionConfiguration.getConnection();
     }
 
+    public List<String> SelectDataFromTable(String tableName, String colName) {
+        // String []  data = {};
+        List<String> list = null;
+        try {
+            connectToDBReuters();
+
+            stmt = conn.createStatement();
+            rs = stmt.executeQuery("select "+colName+" from " +tableName);
+            list = new ArrayList<String>();
+            while (rs.next()) {
+                //Retrieve by column name
+                list.add(rs.getString(colName));
+            }
+            rs.close();
+            stmt.close();
+            conn.close();
+        } catch (SQLException se) {
+            //Handle errors for JDBC
+            se.printStackTrace();
+        } catch (Exception e) {
+            //Handle errors for Class.forName
+            e.printStackTrace();
+        } finally {
+            //finally block used to close resources
+            try {
+                if (stmt != null)
+                    stmt.close();
+            } catch (SQLException se2) {
+            }// nothing we can do
+            try {
+                if (conn != null)
+                    conn.close();
+            } catch (SQLException se) {
+                se.printStackTrace();
+            }//end finally try
+        }//end try
+        return list;
+    }
 }

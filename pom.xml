@@ -10,11 +10,6 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>Generic</module>
-        <module>Apple</module>
-        <module>NBA</module>
-        <module>Vanguard</module>
-        <module>ObamaCare</module>
-        <module>Twitch</module>
         <module>Reuters</module>
     </modules>
     <dependencyManagement>
@@ -44,6 +39,11 @@
                 <groupId>org.apache.poi</groupId>
                 <artifactId>poi</artifactId>
                 <version>3.15</version>
+            </dependency>
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>5.1.40</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

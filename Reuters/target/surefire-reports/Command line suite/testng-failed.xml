@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="TestMenus.TestTopMenus">
+        <methods>
+          <include name="testTopMenuTech"/>
+          <include name="testTopMenuMarkets"/>
+          <include name="testTopMenuCommentary"/>
+          <include name="testTopMenuBusiness"/>
+          <include name="testTopMenuWorld"/>
+          <include name="testTopMenuPictures"/>
+          <include name="testTopMenuPolitics"/>
+        </methods>
+      </class> <!-- TestMenus.TestTopMenus -->
+      <class name="TestMarketTab.TestTabs">
+        <methods>
+          <include name="testStockTabsData"/>
+          <include name="testBondTabsData"/>
+          <include name="testCommoTabsData"/>
+          <include name="testCurrenciesTabsData"/>
+        </methods>
+      </class> <!-- TestMarketTab.TestTabs -->
+      <class name="TestSignInUser.TestSignIn">
+        <methods>
+          <include name="SignInByBalankCredentials"/>
+          <include name="SignInByCorrectCredentials"/>
+          <include name="SignInByBlankPassword"/>
+          <include name="SignInByInCorrectUsername"/>
+          <include name="SignInByInCorrectPassword"/>
+          <include name="SignInByBlankUsername"/>
+        </methods>
+      </class> <!-- TestSignInUser.TestSignIn -->
+      <class name="TestSocialLinks.TestSocial">
+        <methods>
+          <include name="CanGoToFacebook"/>
+          <include name="CanGoToLinkdin"/>
+          <include name="CanGoToTwitter"/>
+        </methods>
+      </class> <!-- TestSocialLinks.TestSocial -->
+      <class name="TestTheWire.TestTheWire">
+        <methods>
+          <include name="CanGoToWireLink"/>
+        </methods>
+      </class> <!-- TestTheWire.TestTheWire -->
+      <class name="SearchItems.TestSearchByDataProvider">
+        <methods>
+          <include name="searchUsingDataProvider" invocation-numbers="0 1 2"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- SearchItems.TestSearchByDataProvider -->
+      <class name="SearchItems.TestSearchByDB">
+        <methods>
+          <include name="searchUsingDB"/>
+        </methods>
+      </class> <!-- SearchItems.TestSearchByDB -->
+      <class name="TestTopNews.TestTopNews">
+        <methods>
+          <include name="CanGoTopNewsDestailsPage"/>
+        </methods>
+      </class> <!-- TestTopNews.TestTopNews -->
+      <class name="SearchItems.TestSearchByExcel">
+        <methods>
+          <include name="search"/>
+        </methods>
+      </class> <!-- SearchItems.TestSearchByExcel -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Reuters News" parallel="tests">
-    <parameter name="useCloudEnv" value="true"/>
+    <parameter name="useCloudEnv" value="false"/>
     <parameter name="userName" value="sarowarjahan"/>
     <parameter name="accessKey" value="28625ea2-4432-4ac5-92ef-2c3153e4a84a"/>
     <parameter name="os" value="Mac"/>
@@ -10,14 +10,15 @@
     <parameter name="url" value="http://www.reuters.com/"/>
     <test name = "Reuters Pages">
         <classes>
-            <class name="TestMenus.TestTopMenus"/>
-            <class name="TestMarketTab.TestTabs"/>
-            <class name="SearchItems.TestSearchByDataProvider"/>
-            <class name="SearchItems.TestSearchByExcel"/>
-            <class name="TestSocialLinks.TestSocial"/>
-            <class name="TestTheWire.TestTheWire"/>
-            <class name="TestTopNews.TestTopNews"/>
-            <class name="TestSignInUser.TestSignIn"/>
+            <!--<class name="TestMenus.TestTopMenus"/>-->
+            <!--<class name="TestMarketTab.TestTabs"/>-->
+            <!--<class name="SearchItems.TestSearchByDataProvider"/>-->
+            <class name="SearchItems.TestSearchByDB"/>
+            <!--<class name="SearchItems.TestSearchByExcel"/>-->
+            <!--<class name="TestSocialLinks.TestSocial"/>-->
+            <!--<class name="TestTheWire.TestTheWire"/>-->
+            <!--<class name="TestTopNews.TestTopNews"/>-->
+            <!--<class name="TestSignInUser.TestSignIn"/>-->
         </classes>
     </test>
 
