@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Reuters News" parallel="tests">
-    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="useCloudEnv" value="true"/>
     <parameter name="userName" value="sarowarjahan"/>
     <parameter name="accessKey" value="28625ea2-4432-4ac5-92ef-2c3153e4a84a"/>
     <parameter name="os" value="Mac"/>
