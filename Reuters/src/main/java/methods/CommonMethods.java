@@ -1,7 +1,7 @@
 package methods;
 
 import Base.CommonAPI;
-import PageFactorySignUp.Signup;
+import PageFactorySignIn.Signin;
 
 /**
  * Created by sarowar on 1/21/17.
@@ -13,8 +13,8 @@ public class CommonMethods extends CommonAPI {
     public void Login(String username, String password) throws InterruptedException {
 
         if(!LogedIn){
-            Signup signup = new Signup(driver);
-            signup.signInLink.click();
+            Signin signin = new Signin(driver);
+            signin.signInLink.click();
             driver.switchTo().frame(0);
             sleepFor(2);
             //signup.signUpLink.click();
@@ -23,6 +23,19 @@ public class CommonMethods extends CommonAPI {
             clickByXpath(".//*[@id='login-form']/input[6]");
         }
 
+    }
+
+
+
+    public void submitForm()throws InterruptedException{
+
+        typeByCss("#request_anonymous_requester_email","sorowar230@gmail.com");
+        typeByCss("#request_subject","This is a test Subject");
+        typeByCss("#request_description","This is a test Description");
+        sleepFor(6);
+        upLoadFile("#request-attachments","/Users/sarowar/Desktop/important-link.rtf");
+        sleepFor(6);
+        clickByXpath(".//*[@id='new_request']/footer/input");
     }
 
     public void ReuterLogout() throws InterruptedException{
@@ -41,5 +54,5 @@ public class CommonMethods extends CommonAPI {
     }
 
     public void ReutersSignUpPage(){driver.get("https://reuters.zendesk.com/hc/en-us");}
-
+    public void ReutersRequestSubmitPage(){driver.get("https://reuters.zendesk.com/hc/en-us/requests/new");}
 }

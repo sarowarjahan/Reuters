@@ -1,6 +1,4 @@
 package TestSignInUser;
-import PageFactorySignUp.Signup;
-import Base.CommonAPI;
 import methods.CommonMethods;
 import org.testng.Assert;
 import org.testng.annotations.Test;

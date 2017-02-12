@@ -15,7 +15,6 @@ import org.openqa.selenium.support.PageFactory;
 public class NewsSearch extends CommonAPI {
     WebDriver pageObjectDriver;
 
-
     @FindBy(how = How.XPATH, using = ".//*[@id='newsSearchField']")
     public static WebElement searchInput;
 

@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Reuters News" parallel="tests">
-    <parameter name="useCloudEnv" value="true"/>
-    <parameter name="userName" value="sarowarjahan"/>
-    <parameter name="accessKey" value="28625ea2-4432-4ac5-92ef-2c3153e4a84a"/>
+    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="userName" value="sarowar230"/>
+    <parameter name="accessKey" value="4306cd8a-6c09-43d8-9c1c-4d0bf9babcb0"/>
     <parameter name="os" value="Mac"/>
     <parameter name="browserName" value="chrome"/>
     <parameter name="browserVersion" value="55.0"/>
     <parameter name="url" value="http://www.reuters.com/"/>
     <test name = "Reuters Pages">
         <classes>
-            <!--<class name="TestMenus.TestTopMenus"/>-->
-            <!--<class name="TestMarketTab.TestTabs"/>-->
-            <!--<class name="SearchItems.TestSearchByDataProvider"/>-->
+            <class name="TestMenus.TestTopMenus"/>
+            <class name="TestMarketTab.TestTabs"/>
+            <class name="SearchItems.TestSearchByDataProvider"/>
             <class name="SearchItems.TestSearchByDB"/>
-            <!--<class name="SearchItems.TestSearchByExcel"/>-->
-            <!--<class name="TestSocialLinks.TestSocial"/>-->
-            <!--<class name="TestTheWire.TestTheWire"/>-->
-            <!--<class name="TestTopNews.TestTopNews"/>-->
-            <!--<class name="TestSignInUser.TestSignIn"/>-->
+            <class name="SearchItems.TestSearchByExcel"/>
+            <class name="TestSocialLinks.TestSocial"/>
+            <class name="TestTheWire.TestTheWire"/>
+            <class name="TestTopNews.TestTopNews"/>
+            <class name="TestSignInUser.TestSignIn"/>
+            <class name="TestRequestPage.TestRequestForm"/>
         </classes>
     </test>
 

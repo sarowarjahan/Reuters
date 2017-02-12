@@ -1,4 +1,4 @@
-package PageFactorySignUp;
+package PageFactorySignIn;
 
 import Base.CommonAPI;
 import org.openqa.selenium.WebDriver;
@@ -11,7 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 /**
  * Created by sarowar on 1/16/17.
  */
-public class Signup extends CommonAPI{
+public class Signin extends CommonAPI{
     WebDriver pageObjectDriver;
 
     @FindBy(how = How.XPATH, using = "html/body/header/div/nav/a[3]")
@@ -23,7 +23,7 @@ public class Signup extends CommonAPI{
     @FindBy(how = How.CSS, using = ".modal.signin")
     public static WebElement iFrame;
 
-    public Signup(WebDriver driver){
+    public Signin(WebDriver driver){
         this.pageObjectDriver = driver;
         PageFactory.initElements(driver,this);
     }
