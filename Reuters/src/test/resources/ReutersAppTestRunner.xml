@@ -11,15 +11,15 @@
     <test name = "Reuters Pages">
         <classes>
             <class name="TestMenus.TestTopMenus"/>
-            <class name="TestMarketTab.TestTabs"/>
-            <class name="SearchItems.TestSearchByDataProvider"/>
-            <class name="SearchItems.TestSearchByDB"/>
-            <class name="SearchItems.TestSearchByExcel"/>
-            <class name="TestSocialLinks.TestSocial"/>
-            <class name="TestTheWire.TestTheWire"/>
-            <class name="TestTopNews.TestTopNews"/>
-            <class name="TestSignInUser.TestSignIn"/>
-            <class name="TestRequestPage.TestRequestForm"/>
+            <!--<class name="TestMarketTab.TestTabs"/>-->
+            <!--<class name="SearchItems.TestSearchByDataProvider"/>-->
+            <!--<class name="SearchItems.TestSearchByDB"/>-->
+            <!--<class name="SearchItems.TestSearchByExcel"/>-->
+            <!--<class name="TestSocialLinks.TestSocial"/>-->
+            <!--<class name="TestTheWire.TestTheWire"/>-->
+            <!--<class name="TestTopNews.TestTopNews"/>-->
+            <!--<class name="TestSignInUser.TestSignIn"/>-->
+            <!--<class name="TestRequestPage.TestRequestForm"/>-->
         </classes>
     </test>
 
