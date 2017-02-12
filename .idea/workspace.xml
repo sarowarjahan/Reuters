@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a524cfa-f2bd-4d5b-9188-c1a12d7db6cd" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Reuters/target/classes/PageFactorySignUp/Signup.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Reuters/src/main/java/PageFactorySignUp/Signup.java" afterPath="$PROJECT_DIR$/Reuters/src/main/java/PageFactorySignIn/Signin.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Reuters/target/classes/PageFactorySearch/NewsSearch.class" afterPath="$PROJECT_DIR$/Reuters/target/classes/PageFactorySearch/NewsSearch.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Reuters/target/classes/methods/CommonMethods.class" afterPath="$PROJECT_DIR$/Reuters/target/classes/methods/CommonMethods.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Reuters/target/test-classes/TestSignInUser/TestSignIn.class" afterPath="$PROJECT_DIR$/Reuters/target/test-classes/TestSignInUser/TestSignIn.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Reuters/src/main/java/PageFactorySearch/NewsSearch.java" afterPath="$PROJECT_DIR$/Reuters/src/main/java/PageFactorySearch/NewsSearch.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Reuters/src/main/java/methods/CommonMethods.java" afterPath="$PROJECT_DIR$/Reuters/src/main/java/methods/CommonMethods.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Reuters/src/test/java/TestSignInUser/TestSignIn.java" afterPath="$PROJECT_DIR$/Reuters/src/test/java/TestSignInUser/TestSignIn.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Reuters/src/test/resources/ReutersAppTestRunner.xml" afterPath="$PROJECT_DIR$/Reuters/src/test/resources/ReutersAppTestRunner.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Reuters/target/test-classes/ReutersAppTestRunner.xml" afterPath="$PROJECT_DIR$/Reuters/target/test-classes/ReutersAppTestRunner.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -42,8 +32,8 @@
       <file leaf-file-name="ReutersAppTestRunner.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Reuters/src/test/resources/ReutersAppTestRunner.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="48" lean-forward="false" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
+            <state relative-caret-position="51">
+              <caret line="3" column="45" lean-forward="false" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -1719,8 +1709,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Reuters/src/test/resources/ReutersAppTestRunner.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="48" lean-forward="false" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
+        <state relative-caret-position="51">
+          <caret line="3" column="45" lean-forward="false" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
           <folding />
         </state>
       </provider>
